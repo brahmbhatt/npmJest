@@ -9,6 +9,7 @@ let arr6 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
 let arr7 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10];
 let arr8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
 let arr9 = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+let arr10 = [0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 describe('bowling score', () => {
   test('score is ', () => {
     expect(bowlingScore(arr)).toBe(90);
@@ -48,5 +49,9 @@ describe('bowling score', () => {
 
   test('for all striks', () => {
     expect(bowlingScore(arr9)).toBe(300);
+  });
+
+  test('for negative score', () => {
+    expect(bowlingScore(arr10)).toBe(-1);
   });
 });
