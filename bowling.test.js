@@ -5,6 +5,7 @@ let arr2 = [5, 5, 3, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let arr3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 7];
 let arr4 = [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let arr5 = [10, 10, 10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let arr6 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
 describe('bowling score', () => {
   test('score is ', () => {
     expect(bowlingScore(arr)).toBe(90);
@@ -32,5 +33,9 @@ describe('bowling score', () => {
 
   test('three striks back to back', () => {
     expect(bowlingScore(arr5)).toBe(81);
+  });
+
+  test('strik at the end', () => {
+    expect(bowlingScore(arr6)).toBe(20);
   });
 });
