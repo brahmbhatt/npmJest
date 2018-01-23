@@ -8,6 +8,7 @@ let arr5 = [10, 10, 10, 5, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let arr6 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
 let arr7 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 10];
 let arr8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
+let arr9 = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
 describe('bowling score', () => {
   test('score is ', () => {
     expect(bowlingScore(arr)).toBe(90);
@@ -43,5 +44,9 @@ describe('bowling score', () => {
 
   test('spare at the end', () => {
     expect(bowlingScore(arr8)).toBe(20);
+  });
+
+  test('for all striks', () => {
+    expect(bowlingScore(arr9)).toBe(300);
   });
 });
