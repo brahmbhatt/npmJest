@@ -9,7 +9,7 @@ module.exports = function bowlingScore(arr)
   let round=0;
   while(i<arr.length && j< arr.length)
   {
-    if(arr[i] < 0 || arr[j] < 0 || arr[i] >10 || arr[j] >10)
+    if(arr[i] < 0 || arr[j] < 0 || arr[i] >10 || arr[j] >10 || round >=10)
       return -1;
     if(arr[i]!==10)
     {
