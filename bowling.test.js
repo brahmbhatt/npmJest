@@ -11,6 +11,7 @@ let arr8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 10];
 let arr9 = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
 let arr10 = [0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let arr11 = [1, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let arr12 = [5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 describe('bowling score', () => {
   test('score is ', () => {
     expect(bowlingScore(arr)).toBe(90);
@@ -58,5 +59,9 @@ describe('bowling score', () => {
 
   test('for score moer than 10 tiles in one shot', () => {
     expect(bowlingScore(arr11)).toBe(-1);
+  });
+
+  test('for score moer than 10 tiles in one round', () => {
+    expect(bowlingScore(arr12)).toBe(-1);
   });
 });
