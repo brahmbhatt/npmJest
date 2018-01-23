@@ -2,6 +2,7 @@ let bowlingScore = require('./bowling');
 let arr = [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6];
 let arr1 = [10,10,10,10,10,10,10,10,10,10,2,3];
 let arr2 = [5, 5, 3, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let arr3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 7];
 describe('bowling score', () => {
   test('score is ', () => {
     expect(bowlingScore(arr)).toBe(90);
@@ -17,5 +18,9 @@ describe('bowling score', () => {
 
   test('for one spare is :', () => {
     expect(bowlingScore(arr2)).toBe(31);
+  });
+
+  test('for one spare is :', () => {
+    expect(bowlingScore(arr3)).toBe(17);
   });
 });

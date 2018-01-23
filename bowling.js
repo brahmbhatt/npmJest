@@ -6,10 +6,11 @@ module.exports = function bowlingScore(arr)
   let j=i+1;
   let roundTotal = 0;
   let result = 0;
-  while(i<arr.length)
+  while(i<arr.length && j< arr.length)
   {
     if(arr[i]!==10)
     {
+
       roundTotal = arr[i]+arr[j];
       if(roundTotal === 10)
       {
