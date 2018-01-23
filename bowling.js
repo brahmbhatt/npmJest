@@ -1,6 +1,6 @@
 module.exports = function bowlingScore(arr)
 {
-  if(arr.length === 10)
+  if(arr.length < 10)
     return -1;
   let i=0;
   let j=i+1;
