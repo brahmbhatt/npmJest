@@ -15,5 +15,7 @@ describe('bowling score', () => {
     expect(bowlingScore(arr1)).toBe(282);
   });
 
-
+  test('for one spare is :', () => {
+    expect(bowlingScore(arr2)).toBe(31);
+  });
 });
